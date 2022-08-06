@@ -1,0 +1,38 @@
+@charset "UTF-8";
+html{font-size:62.5%;font-family:'helvetica neue',tahoma,arial,'hiragino sans gb','Simsun',sans-serif} 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,hr{margin:0;padding:0}
+body{line-height:1.333;font-size:12px}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-family:arial,'hiragino sans gb','microsoft yahei','Simsun',sans-serif}
+li{list-style:none}
+a:link,a:visited{text-decoration:none}
+#dhs{
+	width: 1300px;
+	height:100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#fff;
+	
+	
+}
+
+.head-v3{position:relative;z-index:100;min-width:950px;}
+.head-v3 .navigation-inner{margin:0 auto;width:950px; }
+.navigation-up{height:60px;background-color:#fff;float:right;}
+.navigation-up .navigation-v3{float:right;background-color:#fff;}
+.navigation-up .navigation-v3 ul{float:left; }
+.navigation-up .navigation-v3 li{float:left;font:normal 16px/59px "microsoft yahei";color:#fff }
+.navigation-up .navigation-v3 .nav-up-selected{background:#fff}
+.navigation-up .navigation-v3 .nav-up-selected a:hover{color:#60aff6}
+.navigation-up .navigation-v3 .nav-up-selected-inpage{background:#fff}
+.navigation-up .navigation-v3 li h2{font-weight:normal;padding:0;margin:0}
+.navigation-up .navigation-v3 li h2 a{padding:0 25px;color:#000;display:inline-block;height:60px;}
+
+.navigation-down{position:absolute;top:60px;left:0px;width:100%}
+.navigation-down .nav-down-menu{width:100%;margin:0;background:#f9f9f9;float: right;top:0px}
+.navigation-down .nav-down-menu .navigation-down-inner{margin:auto;width:1200px;float: right;}
+.navigation-down .nav-down-menu dl{float:left;margin:18px 80px 18px 0}
+.navigation-down .menu-1 dl{margin:20px 60px 25px 0}
+.navigation-down .menu-1 dt{font:normal 16px "microsoft yahei";color:#61789e;padding-bottom:10px;border-bottom:1px solid #61789e;margin-bottom:10px}
+.navigation-down .menu-1 dd a{color:#000;font:normal 14px/30px "microsoft yahei"}
+.navigation-down .menu-1 dd a:hover{color:#60aff6}
+.navigation-down .menu-2 dd a,.navigation-down .menu-3 dd a{color:#000;font:normal 16px }
