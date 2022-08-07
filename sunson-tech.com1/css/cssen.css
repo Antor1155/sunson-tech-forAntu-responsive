@@ -1012,24 +1012,22 @@ float: left;
 	margin-top: 30px;
 	line-height: 36px;
 }
+/* edited  */
 #a22top {
-    height: 295px;
-    width: 1300px;
     background-color: #FFF;
-    padding-top: 40px;
-    margin-top: 60px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .7rem;
+    margin: 90px;
+    margin-bottom: 110px;
+    max-width: 1300px;
 }
-#a22topm {
-    height: 350px;
-    width: 1300px;
-    background-color: #FFF;
-    margin-right: auto;
-    margin-left: auto;
+#a22top div{
+    width: 100%;
+}
 
-}
+
 #a22bottom {
 	padding-left: 80px;
     height: 380px;
@@ -1740,3 +1738,4 @@ a.webxz:hover {
 	margin-top: 2px;
 	margin-right: 6px;
 }
+
