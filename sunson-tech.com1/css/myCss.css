@@ -1,6 +1,6 @@
 /* for all the divs and elements to have similar padding and width  */
 .content{
-    max-width: 1200px;
+    max-width: 1350px;
     margin: auto;
     padding-left: 125px;
     padding-right: 125px;
@@ -113,8 +113,24 @@ video{
     background-color: rgb(0,123,194);
 }
 
+/* second section starts here  */
 .second-section{
     text-align: center;
+}
+
+.images-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+}
+
+.images-section div{
+    background-image: url(/sunson-tech.com1//images/ATM\ keypad.jpg);
+    height: 12rem;
+}
+
+.images-section div:hover{
+    background-blend-mode: darken;
 }
 
 /* media query  */
@@ -137,5 +153,8 @@ video{
     }
     .vBanner-P{
         padding-right: 10%;
+    }
+    .images-section{
+        grid-template-columns: 1fr 1fr;
     }
 }
