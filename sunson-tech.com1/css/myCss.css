@@ -80,14 +80,49 @@ nav img{
     display: none;
 }
 
+/* designing video banner section  */
+.video-banner{
+    position: relative;
+    border: 2px solid red;
+    width: 85%;
+    margin: auto;
+}
 
+.video-banner h1{
+    line-height: 95%;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200px;
+}
+
+.vBanner-P{
+    font-size: smaller;
+    color: white;
+    padding-right: 36%;
+}
+
+.vButton{
+    border: none;
+    padding:.5em 1.8em;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(0,123,194);
+}
+
+.second-section{
+    text-align: center;
+}
 
 /* media query  */
 @media only screen and (max-width:450px){
     .content{
         padding: 0;
     }
-    
+
     .small-nav{
         display: block;
         width: 45px;
@@ -95,5 +130,12 @@ nav img{
 
     .big-nav{
         display: none;
+    }
+
+    .video-banner{
+        width: 99%;
+    }
+    .vBanner-P{
+        padding-right: 10%;
     }
 }
