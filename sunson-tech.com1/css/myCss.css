@@ -7,11 +7,8 @@
 }
 
 
-header{
-    display: flex;
-    justify-content: flex-end;
-}
 
+/* common decorations */
 .contact, nav a{
     text-decoration: none;
     color: black;
@@ -20,11 +17,10 @@ header{
     cursor: pointer;
 }
 
-nav a{
-    font-size: 15px;
-}
-nav a:last-child{
-    padding: 0;
+/* headers part with dorpdown  */
+header{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .dropbtn {
@@ -66,9 +62,22 @@ nav a:last-child{
     display: block;
 }
 
+
+/* navbar decorations */
+nav a{
+    font-size: 15px;
+}
+nav a:last-child{
+    padding: 0;
+}
+
 /* designing nav bar  */
 nav img{
     width: 135px;
+}
+
+.small-nav{
+    display: none;
 }
 
 
@@ -77,5 +86,14 @@ nav img{
 @media only screen and (max-width:450px){
     .content{
         padding: 0;
+    }
+    
+    .small-nav{
+        display: block;
+        width: 45px;
+    }
+
+    .big-nav{
+        display: none;
     }
 }
