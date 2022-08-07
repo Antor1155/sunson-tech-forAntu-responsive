@@ -36,3 +36,23 @@ a:link,a:visited{text-decoration:none}
 .navigation-down .menu-1 dd a{color:#000;font:normal 14px/30px "microsoft yahei"}
 .navigation-down .menu-1 dd a:hover{color:#60aff6}
 .navigation-down .menu-2 dd a,.navigation-down .menu-3 dd a{color:#000;font:normal 16px }
+
+@media screen and (max-width: 1300px) {
+	body{
+		background-color:  yellow;
+	}
+	#toptop2{
+		width:100vw;
+	}
+	#toptop3a{
+		margin-right: 4rem;
+	}
+	
+}
+
+
+@media screen and (max-width: 450px){
+	#toptop3a{
+		margin-right: 0;
+	}
+}
