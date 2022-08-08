@@ -38,9 +38,7 @@ a:link,a:visited{text-decoration:none}
 .navigation-down .menu-2 dd a,.navigation-down .menu-3 dd a{color:#000;font:normal 16px }
 
 @media screen and (max-width: 1300px) {
-	body{
-		background-color:  yellow;
-	}
+
 	#toptop2{
 		width:100vw;
 	}
