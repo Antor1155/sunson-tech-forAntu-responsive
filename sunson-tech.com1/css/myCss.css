@@ -177,6 +177,29 @@ nav img{
     max-height: 300px;
 }
 
+/* footer design starts here  */
+
+footer{
+    background-color: rgb(64,64,64);
+}
+
+.last-footer{
+    background-color: rgb(48,48,48);
+}
+
+footer span{
+    color: white;
+    font-size: 13px;
+    margin-bottom: .5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+
 /* media query  */
 @media only screen and (max-width:450px){
     .content{
