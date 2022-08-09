@@ -243,13 +243,13 @@ footer>div{
 
 
 
-
+/* for mobile and smaller view  */
 @media only screen and (max-width:500px){
-    .content{
-        padding: 0;
-    }
 
-  
+    header, nav{
+        max-width: 1350px;
+        padding: 0 .3rem;
+    }
 
     .video-banner{
         width: 99%;
@@ -264,7 +264,6 @@ footer>div{
     }
 
     video{
-
         top: -22%;        
     }
 
