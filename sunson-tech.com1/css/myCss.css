@@ -199,6 +199,11 @@ footer a{
     font-size: 15px;
 }
 
+footer>div{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* media query  */
 @media only screen and (max-width:450px){
@@ -240,5 +245,11 @@ footer a{
         padding-left: 0;
         text-align: center;
         height: 100%;
+    }
+
+    footer > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
     }
 }
