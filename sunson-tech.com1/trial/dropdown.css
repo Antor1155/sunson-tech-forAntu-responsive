@@ -14,6 +14,7 @@ header{
     box-shadow: 0 5px 25px 0 rgba(0 , 0, 0, .5);
     opacity: 0;
     transform: translateY(-19px);
+    
     transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
 
 }
@@ -21,7 +22,10 @@ header{
 .link:focus + .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
+}
 
+.link:focus{
+    background-color: yellow;
 }
 
 
