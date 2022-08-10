@@ -100,16 +100,14 @@ video{
     height: 100%;
 }
 
-
 .video-banner h1{
     line-height: 95%;
 }
 
-
 .vBanner-P{
     font-size: smaller;
     color: white;
-    padding-right: 36%;
+    /* padding-right: 36%; */
 }
 
 .vButton{
@@ -211,6 +209,15 @@ footer>div{
     display: flex;
     justify-content: space-between;
     font-size: 15px;
+}
+
+@media screen and (min-width:1228px){
+    .video-banner{
+        overflow: hidden;
+    }
+    video{
+        height: 28rem;
+    }
 }
 
 
