@@ -1,31 +1,44 @@
-header{
-    background-color: rgb(106, 157, 202);
+.link{
+    background-color: white;
+    border:none;
+    font-size: 15px;
 }
-.dropdown{
+
+.dropdown5{
     position: relative;
 }
 
-.dropdown-menu{
+.dropdown-menu5{
     position: absolute;
-    left: 0;
+    width: 250%;
+    /* width: 25rem; */
+    right: 0%;
     top: calc(100% + 35%);
     background-color: white;
     padding: 5px;
     box-shadow: 0 5px 25px 0 rgba(0 , 0, 0, .5);
     opacity: 0;
     transform: translateY(-19px);
-    
+    border-radius: 5px;
     transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
+    z-index: 2;
 
 }
 
-.link:focus + .dropdown-menu {
+.dropdown5 > .link:focus + .dropdown-menu5 {
     opacity: 1;
     transform: translateY(0);
 }
 
 .link:focus{
     background-color: yellow;
+}
+
+
+@media screen and (max-width:1200px) and (min-width:900px) {
+    .dropdown-menu5{
+        width: 180%;
+    }
 }
 
 
