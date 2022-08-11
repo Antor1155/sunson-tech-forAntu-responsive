@@ -11,6 +11,7 @@
 .dropdown-menu5{
     position: absolute;
     width: 250%;
+    font-size: 15px;
     /* width: 25rem; */
     right: 0%;
     top: calc(100% + 35%);
@@ -23,11 +24,14 @@
     transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
     z-index: 2;
 
+    pointer-events: none;
+
 }
 
 .dropdown5 > .link:focus + .dropdown-menu5 {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
 }
 
 .link:focus{

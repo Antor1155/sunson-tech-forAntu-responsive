@@ -56,6 +56,24 @@ nav img{
 }
 
 
+.sub-menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.sub-menus p{
+    font-size: 16px;
+    border-bottom: 1px solid rgb(168, 75, 75);
+    padding-top: 5px;
+    color: rgb(60, 122, 122);
+}
+
+.sub-menus a{
+    display: block;
+    padding-left: 0;
+}
 
 
 /* designing video banner section  */
