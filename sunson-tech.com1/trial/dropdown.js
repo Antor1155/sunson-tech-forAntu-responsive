@@ -8,4 +8,14 @@ document.addEventListener('click', e =>{
         currentDropdown.classList.toggle("active")
     }
 
+
+    // for sub menus the dropdon comes here 
+    // const isOption = e.target.matches("[data-option-button]")
+    // if(!isOption && e.target.closest('[data-option]') != null) return
+
+    // let curretnOption
+    // if(isOption) {
+    //     curretnOption = e.target.closest('[data-option]')
+    // }
+
 })

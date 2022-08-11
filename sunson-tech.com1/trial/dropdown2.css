@@ -4,8 +4,13 @@ nav{
     align-items: center;
     position: relative;
 }
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
 
-img{
+.logo{
     width: 155px;
 }
 
@@ -24,6 +29,7 @@ hr{
     border-radius: 5px;
     margin: 10% 0;
     transition: width 350ms ;
+    pointer-events: none;
 }
 
 .hamburger-menu:hover hr{
@@ -42,18 +48,45 @@ hr:nth-child(3){
 .sub-menus{
     position: absolute;
     top: 40%;
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 100%;
-    display: flex;
-    flex-direction: column;
+
     opacity: 0;
     pointer-events: none;
-    transition: top 350ms ease-in-out, opacity 350ms ease-in-out;
-    
+    transition: top 350ms ease-in-out, opacity 350ms ease-in-out; 
 }
 
-.dropdown.active > .hamburger-menu + .sub-menus{
+.cic-dropdown.active  .sub-menus{
     opacity: 1;
     top: 100%;
     pointer-events: auto;
 }
+
+
+/* sub menu starts form here  */
+.sub-menu{
+    width: 100%;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* margin-bottom: 1.5rem; */
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none;
+}
+
+.sub-menu:hover  .underline{
+    text-decoration: underline;
+}
+
+
+.sub-menu:focus .hidden{
+    display: block;
+}
+
+
