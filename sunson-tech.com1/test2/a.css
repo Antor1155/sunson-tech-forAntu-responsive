@@ -1,0 +1,20 @@
+.dropdown{
+    position : relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top:100%;
+    padding: 55px;
+    background-color: yellow;
+
+    opacity:0;
+    pointer-events: none;
+    transition: opacity 350ms , top 350ms;
+}
+
+.dropdown.active > .link + .dropdown-menu{
+    opacity: 1;
+    top: 200%;
+    pointer-events: auto;
+}
