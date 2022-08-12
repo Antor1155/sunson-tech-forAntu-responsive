@@ -35,6 +35,7 @@ document.addEventListener('click', e=>{
             console.log(element)
             if(!element.classList.contains('active')){
                 element.style.display ="none";
+                document.getElementById("news").style.display='none';
             }
         })
     }
@@ -43,6 +44,7 @@ document.addEventListener('click', e=>{
             console.log(element)
             if(!element.classList.contains('active')){
                 element.style.display ="block";
+                document.getElementById("news").style.display='block';
             }
         })
 
