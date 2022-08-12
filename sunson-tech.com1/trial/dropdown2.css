@@ -1,20 +1,21 @@
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
 }
-a{
+
+a {
     text-decoration: none;
     font-size: 18px;
     color: black;
 }
 
-.logo{
+.logo {
     width: 155px;
 }
 
-.hamburger-menu{
+.hamburger-menu {
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -25,27 +26,27 @@ a{
 hr {
     height: 3px;
     width: 100%;
-    background-color: black; 
+    background-color: black;
     border-radius: 5px;
-    margin: 10% 0 ;
-    transition: width 350ms ;
+    margin: 10% 0;
+    transition: width 350ms;
     pointer-events: none;
 }
 
-.hamburger-menu:hover hr{
+.hamburger-menu:hover hr {
     width: 40px;
-   
+
 }
 
-hr:nth-child(2){
+hr:nth-child(2) {
     width: 75%;
 }
 
-hr:nth-child(3){
+hr:nth-child(3) {
     width: 45%;
 }
 
-.sub-menus{
+.sub-menus {
     position: absolute;
     top: 40%;
     /* background-color: yellow; */
@@ -53,10 +54,10 @@ hr:nth-child(3){
 
     opacity: 0;
     pointer-events: none;
-    transition: top 350ms ease-in-out, opacity 350ms ease-in-out; 
+    transition: top 350ms ease-in-out, opacity 350ms ease-in-out;
 }
 
-.cic-dropdown.on  .sub-menus{
+.cic-dropdown.on .sub-menus {
     opacity: 1;
     top: 100%;
     pointer-events: auto;
@@ -64,10 +65,10 @@ hr:nth-child(3){
 
 /* ******---------------------- */
 /* sub menu starts form here  */
-.sub-menu{
+.sub-menu {
     width: 100%;
     text-align: start;
-    background-color: transparent;
+    background-color: white;
     border: none;
     cursor: pointer;
     /* margin-bottom: 1.5rem; */
@@ -79,27 +80,64 @@ hr:nth-child(3){
     position: relative;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.sub-menu:hover  .underline{
+.sub-menu:hover .underline {
     text-decoration: underline;
 }
 
 
-.allOption.active .hidden{
+.allOption.active .hidden {
     display: block;
 }
 
-.options{
+.options {
     display: none;
 }
 
-.allOption.active .options{
+.allOption.active .options {
     display: flex;
     flex-direction: column;
     top: 100%;
 }
 
+.options a {
+    margin: .5rem .2rem;
+}
 
+.options a:hover {
+    color: rgb(58, 58, 190);
+}
+
+
+/* here comes the solution section part  */
+.solution-section>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.solution-section button{
+    border: none;
+    border-bottom: 1px solid rgb(233, 99, 99);
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+.solution-section button:hover{
+    text-decoration: underline;
+
+}
+
+.second-sub-menu {
+    display: none;
+}
+
+.second-sub.activated .second-sub-menu{
+    display: flex;
+    flex-direction: column;
+}
