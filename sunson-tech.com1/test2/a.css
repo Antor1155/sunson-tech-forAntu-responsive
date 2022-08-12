@@ -1,20 +1,501 @@
-.dropdown{
-    position : relative;
+body{
+    margin: 0;
 }
 
-.dropdown-menu{
-    position: absolute;
-    top:100%;
-    padding: 55px;
-    background-color: yellow;
+/* small monitor navbara design here  */
 
-    opacity:0;
+.extra-layer p{
+    margin-right: 44px;
+}
+
+.extra-layer{
+    display: flex;
+    /* background-color: yellow; */
+    
+}
+
+
+.cic-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+   
+    padding:1rem .5rem .4rem .8rem;
+    box-shadow: 0 2px 10px gray;
+}
+
+.cic-dropdown a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    
+}
+
+.logo {
+    width: 155px;
+}
+
+.hamburger-menu {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    margin: 10% 0;
+    transition: width 350ms;
     pointer-events: none;
-    transition: opacity 350ms , top 350ms;
 }
 
-.dropdown.active > .link + .dropdown-menu{
-    opacity: 1;
-    top: 200%;
-    pointer-events: auto;
+.hamburger-menu:hover hr {
+    width: 40px;
+
 }
+
+hr:nth-child(2) {
+    width: 75%;
+}
+
+hr:nth-child(3) {
+    width: 45%;
+}
+
+.sub-menus {
+    position: absolute;
+    top: 40%;
+    /* background-color: yellow; */
+    width: 95%;
+    margin: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 450ms , opacity 350ms ;
+    border-bottom: 1px solid red;
+}
+
+.cic-dropdown.on .sub-menus {
+    opacity: 1;
+    top: 100%;
+    pointer-events: auto;
+    background-color:  white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    right: -2%;
+
+
+}
+
+/* ******---------------------- */
+/* sub menu starts form here  */
+.sub-menu {
+    width: 100%;
+    text-align: start;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    /* margin-bottom: 1.5rem; */
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+
+
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.sub-menu:hover .underline {
+    text-decoration: underline;
+}
+
+
+.allOption.active .hidden {
+    display: block;
+}
+
+.options {
+    display: none;
+}
+
+.allOption.active .options {
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    padding-bottom: 2rem;
+}
+
+.options a {
+    margin: .5rem .2rem;
+}
+
+.options a:hover {
+    color: rgb(58, 58, 190);
+}
+
+
+/* here comes the solution section part  */
+.solution-section>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.solution-section button{
+    border: none;
+    border-bottom: 1px solid rgb(226, 113, 113);
+    margin-bottom: 1rem;
+    background-color: white;
+   
+    padding: 5px;
+}
+
+.solution-section button:hover{
+    text-decoration: underline;
+
+}
+
+.second-sub-menu {
+    display: none;
+}
+
+.second-sub.activated .second-sub-menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+
+/* big monitor navbar starts form here  */
+.normal-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 4rem;
+    box-shadow: 1px 2px 15px gray;
+    margin-bottom: .5rem;
+
+}
+
+.normal-nav img{
+    width: 25px;
+}
+
+.normal-nav img:first-child{
+    width: 144px;
+}
+
+.normal-nav button, a{
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.normal-nav button, img{
+    cursor: pointer;
+}
+
+.normal-nav div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* all external css comes from this line */
+/* for all the divs and elements to have similar padding and width  */
+
+
+
+/* common decorations */
+.contact{
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.common-Width{
+    width: 85%;
+    margin: auto;
+    max-width: 1350px;
+}
+
+/* headers part with dorpdown  */
+
+
+/* dropdown decorations are all here  */
+.dropbtn {
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/global.svg');
+    border: none;
+    margin-right: 20px;
+}
+
+
+
+
+/* designing video banner section  */
+.video-banner{
+    position: relative;
+    /* background-color: yellow; */
+    height: 85vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .video-banner div{
+    margin-top: 5%;
+  }
+
+.video-banner h1{
+    line-height: 95%;
+    pointer-events: none;
+    font-size: xx-large;
+    color: white;
+}
+
+.vBanner-P{
+    font-size: 1rem;
+    color: white;
+    pointer-events: none;
+    /* padding-right: 36%; */
+}
+
+.vButton{
+    border: none;
+    padding:.5em 1.8em;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(0,123,194);
+}
+
+/* second section starts here  */
+.second-section{
+    text-align: center;
+    overflow: hidden;
+}
+
+.images-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    background-color: yellow;
+    
+}
+
+.images-section div{
+    background-image: url(../images/ATM\ keypad.jpg);
+    background-size: cover;
+    /* border: 2px solid blue; */
+    width: 100%;  
+    height: 12rem;
+    overflow: hidden;
+}
+
+.images-section div:hover{
+    background-blend-mode: darken;
+}
+
+
+/* third section with one image banner  */
+
+.third-section{
+    background-image: url(../images/container.jpg);
+    background-size: cover;
+    color: white;
+    height: 20.5rem;
+}
+
+.third-section div{
+    padding: 95px;
+}
+
+.third-section a, .fourth-section a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* section 4 decoration starts form here  */
+.fourth-section{
+    background-color: #F7F7F7;
+    height: 20.5rem;
+    padding-left: 75px;
+}
+
+.workerImg{
+    width: 100%;
+    max-height: 300px;
+}
+
+/* footer design starts here  */
+
+footer{
+    background-color: rgb(64,64,64);
+}
+
+.last-footer{
+    background-color: rgb(48,48,48);
+}
+
+footer span{
+    color: white;
+    font-size: 13px;
+    margin-bottom: .5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+footer>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-footer >div{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+@media screen and (min-width:1200px){
+    /* .video-banner{
+        overflow: hidden;
+    }
+    video{
+        height: 28rem;
+    } */
+
+    .cic-dropdown{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .normal-nav{
+        display: none;
+    }
+}
+
+
+/* media query  */
+@media only screen and (max-width:900px) {
+    /* .small-nav{
+        display: block;
+        width: 45px;
+    }
+    .big-nav{
+        display: none;
+    }
+
+    .video-banner{
+        position: relative;
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+    } */
+
+    .fourth-section{
+        padding-left: 1rem;
+    }
+
+    .fourth-section h5{
+        padding-right: 1rem;
+    }
+
+}
+
+
+
+
+/* for mobile and smaller view  */
+@media only screen and (max-width:500px){
+
+    header, nav{
+        max-width: 1350px;
+        padding: 0 .3rem;
+    }
+
+    .video-banner{
+        height: 100%;
+        text-align: center;
+       
+    }
+
+    .vBanner-P{
+        padding-right: 10%;
+        padding-left: 10%;
+        color: black
+    }
+
+    /* video{
+        height: 50%;
+        top: 0;       
+    } */
+
+
+    .images-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .third-section div{
+        text-align: center;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+    }
+
+    .common-Width{
+        width: 100%;
+    }
+
+    .fourth-section{
+        padding-left: 0;
+        text-align: center;
+        height: 100%;
+    }
+
+    .fourth-section h5{
+        padding-right: 1rem;
+    }
+
+    footer > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .last-footer{
+        display: block;
+    }
+
+    .last-footer >div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
