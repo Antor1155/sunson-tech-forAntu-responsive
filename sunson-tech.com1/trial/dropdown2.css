@@ -22,12 +22,12 @@ a{
     border: none;
 }
 
-hr{
+hr {
     height: 3px;
     width: 100%;
-    background-color: black;
+    background-color: black; 
     border-radius: 5px;
-    margin: 10% 0;
+    margin: 10% 0 ;
     transition: width 350ms ;
     pointer-events: none;
 }
@@ -49,20 +49,20 @@ hr:nth-child(3){
     position: absolute;
     top: 40%;
     /* background-color: yellow; */
-    width: 100%;
+    width: 85%;
 
     opacity: 0;
     pointer-events: none;
     transition: top 350ms ease-in-out, opacity 350ms ease-in-out; 
 }
 
-.cic-dropdown.active  .sub-menus{
+.cic-dropdown.on  .sub-menus{
     opacity: 1;
     top: 100%;
     pointer-events: auto;
 }
 
-
+/* ******---------------------- */
 /* sub menu starts form here  */
 .sub-menu{
     width: 100%;
@@ -74,6 +74,9 @@ hr:nth-child(3){
     padding-left: 0;
     display: flex;
     justify-content: space-between;
+
+
+    position: relative;
 }
 
 .hidden{
@@ -85,8 +88,21 @@ hr:nth-child(3){
 }
 
 
-.sub-menu:focus .hidden{
+.allOption.active .hidden{
     display: block;
+}
+
+.options{
+    opacity: .5;
+    /* position: absolute; */
+    /* top: -200%; */
+}
+
+.allOption.active .options{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    top: 100%;
 }
 
 
