@@ -12,19 +12,21 @@
 
 <body>
     <header>
+
+        <!-- this nav is the hambarger menu nav for smaller devices  -->
         <nav class="cic-dropdown" data-dropdown>
             <img class="logo" src="../images/logo.svg" alt="">
             <div class="extra-layer">
-            
-            <button class="hamburger-menu" data-dropdown-button>
-                <hr>
-                <hr>
-                <hr>
-            </button>
-        </div>
+
+                <button class="hamburger-menu" data-dropdown-button>
+                    <hr>
+                    <hr>
+                    <hr>
+                </button>
+            </div>
             <div class="sub-menus ">
                 <div class="allOption" data-option>
-                    
+
                     <button class="sub-menu" data-option-button>
                         <p class="hidden">x</p>
                         <p class="underline">Solutions</p>
@@ -101,7 +103,7 @@
                             <div class="second-sub" data-second-sub>
 
                                 <button class="second-sub-options" data-second-sub-options>Payment terminals</button>
-                                <div class="second-sub-menu" >
+                                <div class="second-sub-menu">
 
                                     <a href="notfound.html">Bitcoin Payment Kiosk</a>
                                     <a href="notfound.html">Cash Payment Kiosk</a>
@@ -113,7 +115,7 @@
                             <div class="second-sub" data-second-sub>
 
                                 <button class="second-sub-options" data-second-sub-options>Development</button>
-                                <div class="second-sub-menu"> 
+                                <div class="second-sub-menu">
 
                                     <a href="notfound.html">Hardware</a>
                                     <a href="notfound.html">Software</a>
@@ -166,32 +168,53 @@
                 <a id="news" href="notfound.html">
                     <p class="underline">News</p>
                 </a>
-
-
-
         </nav>
 
+
+        <!-- this is bigger nav for bigger devices  -->
         <nav class="normal-nav">
             <img src="../images/logo.svg" alt="">
             <div>
-                <button>Solutions</button>
-                <button>Industries</button>
-                <button>Products</button>
-                <button>Company</button>
-                <img src="../images/global.svg" alt="">
-                <img src="../images/searchIcon.svg" alt="">
-                <a href="notfound.html">News</a>
+                <button id="solutions" class="big-nav-option">Solutions</button>
+                <button id="industries" class="big-nav-option">Industries</button>
+                <button id="products" class="big-nav-option">Products</button>
+                <button id="company" class="big-nav-option">Company</button>
+                <img id="languages" class="big-nav-option" src="../images/global.svg" alt="">
+                <img id="search" class="big-nav-option" src="../images/searchIcon.svg" alt="">
+                <a class="big-nav-option" href="notfound.html">News</a>
+            </div>
+
+
+            <!-- here comes the scroll part of the nav  -->
+            <div id="scroll-option" class="scroll-option">
+
+                <div id="nav-scorelled-section" class="nav-scorelled-section">
+                   
+                    <!-- here will come all the options when clicked -->
+                </div>
+
+                <div id="nav-scorelled-sub-section" class="nav-scorelled-sub-section">
+                    <a href="notfound.html">Cash Dispenser ATM</a>
+                    <a href="notfound.html">Cash Dispenser ATM</a>
+                    <a href="notfound.html">Cash Dispenser ATM</a>
+                    <a href="notfound.html">Cash Dispenser ATM</a>
+
+                </div>
+
+
+
             </div>
         </nav>
     </header>
 
-<!-- video banner section starts form here  -->
+    <!-- video banner section starts form here  -->
     <section class="video-banner">
         <video src="../images/2078.mp4" autoplay="autoplay" loop="loop" muted="muted" webkit-playsinline="true"
             playsinline="true" cue-before:none;></video>
-        <div class="common-Width ">
+        <div class="common-Width">
 
-            <h1 class="text-white"><span style="color: rgb(220, 32, 32);">INNOVATION</span> <br> FOR A <br>BETTER <br> FUTURE</h1>
+            <h1 class="text-white"><span style="color: rgb(220, 32, 32);">INNOVATION</span> <br> FOR A <br>BETTER <br>
+                FUTURE</h1>
             <p class="vBanner-P my-4 ">Builds intelligent applications and <br> scenarios in various fields <br>
                 Commits to becoming a leading innovative solutions provider</p>
 
@@ -345,7 +368,7 @@
 
     </footer>
 
-    
+
 
 
 
