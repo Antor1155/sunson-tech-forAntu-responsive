@@ -197,7 +197,7 @@ hr:nth-child(3) {
     
 }
 
-.normal-nav button, a{
+.normal-nav button, .normal-nav a{
     background-color: white;
     border: none;
     text-decoration: none;
@@ -363,6 +363,17 @@ video {
 .second-section{
     text-align: center;
     overflow: hidden;
+    margin-top :4rem;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+ h1{
+    font-size: 2.1rem;
 }
 
 .images-section{
@@ -370,7 +381,8 @@ video {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: .5rem;
     background-color: yellow;
-    
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 
 .images-section div{
@@ -378,7 +390,7 @@ video {
     background-size: cover;
     /* border: 2px solid blue; */
     width: 100%;  
-    height: 12rem;
+    height: 15rem;
     overflow: hidden;
 }
 
@@ -393,7 +405,7 @@ video {
     background-image: url(../images/container.jpg);
     background-size: cover;
     color: white;
-    height: 20.5rem;
+    height: 30rem;
 }
 
 .third-section div{
@@ -402,9 +414,16 @@ video {
 
 .third-section a, .fourth-section a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.3rem;
+    color: rgb(46, 108, 223);
 }
 
+
+.single-h1{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
 
 /* section 4 decoration starts form here  */
 .fourth-section{
@@ -452,7 +471,18 @@ footer>div{
     font-size: 15px;
 }
 
-@media screen and (min-width:1200px){
+
+@media screen and (max-width:1200px) {
+    .images-section div{
+        height: 11rem;
+    }
+
+    .third-section{
+        height: 22rem;
+    }
+}
+
+@media screen and (min-width:1000px){
     /* .video-banner{
         overflow: hidden;
     }
@@ -465,7 +495,7 @@ footer>div{
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1000px) {
     .normal-nav{
         display: none;
     }
