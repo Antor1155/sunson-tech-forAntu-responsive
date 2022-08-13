@@ -55,7 +55,7 @@ document.addEventListener('click', e => {
     }
 })
 
-// js for third layer 
+// js for third layer
 document.addEventListener("click", e => {
     // for sub menus the dropdon comes here 
     const isOptionButton = e.target.matches("[data-second-sub-options]")
@@ -76,14 +76,18 @@ document.addEventListener("click", e => {
 
 // big screen options and suboptions 
 document.addEventListener("click", e => {
-
     if (e.target.matches(".big-nav-option")) {
         e.stopPropagation();
+
+        // this code will handle the sub sub common section to display development status 
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `<div class="under-development">
+        <h2>this site in still under development</h2>
+        </div>`
 
         document.getElementById("scroll-option").classList.add("down");
 
         // sub options of the main options 
-        if (e.target.matches("#solutions")) { 
+        if (e.target.matches("#solutions")) {
             document.getElementById("nav-scorelled-section").innerHTML = `
             <button id ="Bank">Bank & Identity</button>
             <button id ="Retail">Retail & Healthcare</button>
@@ -93,6 +97,13 @@ document.addEventListener("click", e => {
             <button id ="Payment">Payment terminals</button>
             <button id ="Development">Development</button>
         `;
+
+            document.getElementById('nav-scorelled-sub-section').innerHTML = `
+                    <a href="notfound.html">Cash Dispenser ATM</a>
+                    <a href="notfound.html">Cash Deposit Machine ATM</a>
+                    <a href="notfound.html">Smart Teller Machine STM</a>
+                    <a href="notfound.html">Currency Exchange Kiosk</a>`
+
         }
 
         else if (e.target.matches("#industries")) {
@@ -131,7 +142,7 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#search")) {
-             
+
             document.getElementById("nav-scorelled-section").innerHTML = ` 
              <input type="text">
             <button> Search</button>
@@ -145,25 +156,74 @@ document.addEventListener("click", e => {
         // console.log("from nav")
         document.getElementById("scroll-option").classList.remove("down");
     }
+
 })
 
 
-// if (e.target.matches("#solutions")) { 
-//     document.getElementById("nav-scorelled-section").innerHTML = `
-//     <button id ="Bank">Bank & Identity</button>
-//     <button id ="Retail">Retail & Healthcare</button>
-//     <button id ="PIN">PIN PAD</button>
-//     <button id ="Public">Public & Transportation</button>
-//     <button id ="Information">Information & Augmented Reality</button>
-//     <button id ="Payment">Payment terminals</button>
-//     <button id ="Development">Development</button>
-// `;
-// }
+document.addEventListener("click", e => {
 
+    if (e.target.matches('#Bank')) {
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `
+                    <a href="notfound.html">Cash Dispenser ATM</a>
+                    <a href="notfound.html">Cash Deposit Machine ATM</a>
+                    <a href="notfound.html">Smart Teller Machine STM</a>
+                    <a href="notfound.html">Currency Exchange Kiosk</a>`
+    }
+
+    if (e.target.matches('#Retail')) {
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `
+                        <a href="notfound.html">Hospital check-in-koisk</a>
+                        <a href="notfound.html">Self-service Healthcare Kiosk</a>
+                        <a href="notfound.html">Mobile Charging Station</a>
+                        <a href="notfound.html">Hotel Check-in Kiosk</a>`
+    }
+
+    if (e.target.matches('#PIN')) {
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `
+                        <a href="notfound.html">EPP V4, V5, V6</a>
+                        <a href="notfound.html">Wincor EPP</a>
+                        <a href="notfound.html">Full Metal Keyboard</a>
+                        <a href="notfound.html">NON PCL Pinpad</a>`
+    }
+
+    if (e.target.matches('#Public')) {
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `
+                        <a href="notfound.html">Ticket Vending Kiosk</a>
+                        <a href="notfound.html">Card Dispenser Kiosk</a>
+                        <a href="notfound.html">Card Top-up Kiosk</a>
+                        <a href="notfound.html">Parking Payment Kiosk</a>
+                        <a href="notfound.html">Un-attendant Payment Terminal</a>`
+    }
+
+    if (e.target.matches('#Information')) {
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `
+        <a href="notfound.html">Information Kiosk</a>
+        <a href="notfound.html">Digital Signage</a>
+        <a href="notfound.html">Way Finding Solutions</a>
+        <a href="notfound.html">Queuing System</a>
+        <a href="notfound.html">Un-attendant Payment Terminal</a>`
+    }
+
+    if (e.target.matches('#Payment')) {
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `
+        <a href="notfound.html">Bitcoin Payment Kiosk</a>
+        <a href="notfound.html">Cash Payment Kiosk</a>
+        <a href="notfound.html">Wall Mount Payment Kiosk</a>
+        <a href="notfound.html">Cashless Payment Kiosk</a>`
+    }
+
+    if (e.target.matches('#Development')) {
+        document.getElementById('nav-scorelled-sub-section').innerHTML = `
+        <a href="notfound.html">Hardware</a>
+        <a href="notfound.html">Software</a>
+        <a href="notfound.html">Information Security</a>`
+    }
+})
+
+
+// closing the nav 
 document.addEventListener("click", e=>{
-    
-    if(e.target.matches('#Bank')){
-        document.getElementById('nav-scorelled-sub-section').innerHTML=`
-        hellow world`
+    if (e.target.matches('.video-banner, .common-Width, h1, p')) {
+        document.getElementById("scroll-option").classList.remove("down");
     }
 })
