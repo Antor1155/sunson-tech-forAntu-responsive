@@ -178,8 +178,8 @@ hr:nth-child(3) {
 .normal-nav{
     display: flex;
     justify-content: space-between;
-    padding: .7rem 4rem;
-    box-shadow: 1px 2px 15px black;
+    padding: .6rem 4rem;
+    box-shadow: 0px 5px 8px black;
     margin-bottom: .5rem;
 
     max-width: 1700px;
@@ -544,6 +544,10 @@ footer a:hover{
     width: 25px;
 }
 
+.small-social-media{
+    display: none;
+}
+
 .last-footer >div{
     color: white;
     display: flex;
@@ -614,6 +618,9 @@ footer a:hover{
 
 /* for mobile and smaller view  */
 @media only screen and (max-width:500px){
+    .common-Width{
+        width: 100%;
+    }
 
     header, nav{
         max-width: 1350px;
@@ -621,37 +628,35 @@ footer a:hover{
     }
 
     .video-banner{
-        height: 100%;
         text-align: center;
-       
     }
-
-    .vBanner-P{
-        padding-right: 10%;
-        padding-left: 10%;
-        color: black
+    .vButton-container{
+        align-items: center;
     }
-
-    /* video{
-        height: 50%;
-        top: 0;       
-    } */
-
 
     .images-section{
         grid-template-columns: 1fr 1fr;
     }
+
+
     .third-section div{
         text-align: center;
     }
 
-    .row{
-        flex-direction: column-reverse;
+    .third-section-tags{
+        padding-top: 10px !important;
     }
 
-    .common-Width{
-        width: 100%;
+    .fourth-section{
+        grid-template-columns: 1fr;
+        /* gri */
     }
+
+    .fourth-section-content{
+        padding:  0;
+    }
+
+
 
     .fourth-section{
         padding-left: 0;
@@ -663,19 +668,41 @@ footer a:hover{
         padding-right: 1rem;
     }
 
-    footer > div{
+    .first-footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
+    }
+
+    .social-media{
+        display: none !important;
+    }
+
+    .small-social-media{
+        display: flex;
+        justify-content: center;
+    }
+
+    .small-social-media img{
+        width: 35px;
+        margin: .5rem;
     }
 
     .last-footer{
         display: block;
     }
 
+    .last-footer a{
+        padding: 20px 20px;
+    }
+
     .last-footer >div{
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .d-none{
+        display: none;
     }
 }
 
