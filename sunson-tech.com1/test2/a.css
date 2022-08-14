@@ -2,6 +2,39 @@ body{
     margin: 0;
 }
 
+/* common decorations */
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-family: system-ui;
+}
+
+ h1{
+    font-size: 2.1rem;
+    font-family: system-ui;
+}
+
+h2, h3, h4{
+    font-family: system-ui;
+    font-weight: 400;
+}
+
+.contact{
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.common-Width{
+    width: 85%;
+    margin: auto;
+    max-width: 1700px;
+}
+
+/* ************************************* */
 /* small monitor navbara design here  */
 
 .extra-layer p{
@@ -277,21 +310,6 @@ hr:nth-child(3) {
 
 
 
-/* common decorations */
-.contact{
-    text-decoration: none;
-    color: black;
-    padding: 0 15px;
-    font-size: 13px;
-    cursor: pointer;
-}
-
-.common-Width{
-    width: 85%;
-    margin: auto;
-    max-width: 1700px;
-}
-
 /* headers part with dorpdown  */
 
 
@@ -365,15 +383,6 @@ video {
     overflow: hidden;
     margin-top :4rem;
     margin-bottom: 5rem;
-}
-
-h3 {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
-
- h1{
-    font-size: 2.1rem;
 }
 
 .images-section{
@@ -451,6 +460,7 @@ h3 {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 3rem;
+    font-weight: 400;
 }
 
 
@@ -656,8 +666,6 @@ footer a:hover{
         padding:  0;
     }
 
-
-
     .fourth-section{
         padding-left: 0;
         text-align: center;
@@ -666,6 +674,10 @@ footer a:hover{
 
     .fourth-section h5{
         padding-right: 1rem;
+    }
+
+    .workingImgDiv{
+        order: -1;
     }
 
     .first-footer{
