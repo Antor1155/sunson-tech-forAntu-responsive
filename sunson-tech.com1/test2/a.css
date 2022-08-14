@@ -178,7 +178,7 @@ hr:nth-child(3) {
 .normal-nav{
     display: flex;
     justify-content: space-between;
-    padding: 1.2rem 4rem;
+    padding: .7rem 4rem;
     box-shadow: 1px 2px 15px black;
     margin-bottom: .5rem;
 
@@ -380,13 +380,12 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: .5rem;
-    background-color: yellow;
     margin-top: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    color: white;
 }
 
 .images-section div{
-    background-image: url(../images/ATM\ keypad.jpg);
     background-size: cover;
     /* border: 2px solid blue; */
     width: 100%;  
@@ -394,8 +393,37 @@ h3 {
     overflow: hidden;
 }
 
-.images-section div:hover{
-    background-blend-mode: darken;
+#hover1{
+    background-image: url(../images/Payment\ Method.jpg);
+}
+#hover2{
+    background-image: url(../images/Assistance\ at\ Store.jpg);
+}
+#hover3{
+    background-image: url(../images/ATM\ keypad.jpg);
+}
+#hover4{
+    background-image: url(../images/Public\ Transportation.jpg);
+}
+#hover5{
+    background-image: url(../images/Escalators.jpg);
+}
+#hover6{
+    background-image: url(../images/Paying\ Cash.jpg);
+}
+
+.hover:hover .hover-content{
+    background-color: rgba(15, 15, 10, 0.315);
+    
+}
+
+
+.hover-text{
+    display: none;
+}
+
+.hover:hover .hover-text {
+    display: block;
 }
 
 
@@ -501,6 +529,10 @@ footer a{
     text-decoration: none;
     color: white;
     font-size: 15px;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 .social-media{

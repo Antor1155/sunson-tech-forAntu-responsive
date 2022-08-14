@@ -93,7 +93,7 @@ document.addEventListener("click", e => {
             <button id ="Retail">Retail & Healthcare</button>
             <button id ="PIN">PIN PAD</button>
             <button id ="Public">Public & Transportation</button>
-            <button id ="Information">Information & Augmented Reality</button>
+            <button id ="Information">Information & Augmented</button>
             <button id ="Payment">Payment terminals</button>
             <button id ="Development">Development</button>
         `;
@@ -145,7 +145,7 @@ document.addEventListener("click", e => {
 
             document.getElementById("nav-scorelled-section").innerHTML = ` 
              <input type="text">
-            <button> Search</button>
+            <button style="background-color: #cdcdf6; padding:10px; border-radius: 7px;"> Search</button>
            
         `;
         }
@@ -222,7 +222,7 @@ document.addEventListener("click", e => {
 
 
 // closing the nav 
-document.addEventListener("click", e=>{
+document.addEventListener("click", e => {
     if (e.target.matches('.video-banner, .common-Width, h1, p')) {
         document.getElementById("scroll-option").classList.remove("down");
     }
