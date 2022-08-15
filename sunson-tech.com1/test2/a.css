@@ -256,19 +256,51 @@ hr:nth-child(3) {
     flex-direction: column;
     align-items: flex-start !important;
     text-align:left !important;
-    border-right: 2px solid #c4bdbd;
+    
 }
 
 .nav-scorelled-sub-section{
+    border-left: 2px solid #c4bdbd;
     flex-direction: column;
     align-items: flex-start !important;
     justify-content: space-between !important;
     height: 80%;
+    padding-left: 2rem;
 }
 
 .nav-scorelled-section button:focus, button:hover{
     text-decoration: underline;
 }
+
+#searchN {
+    width: 100%;
+    /* justify-content: space-between !important; */
+    padding-right: 0;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#searchN input{
+
+    height: 2rem;
+    margin-right: 2rem;
+}
+#searchN button{
+    background-color: #0065ED;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 5px;
+    transition: color 500ms ease, padding 500ms;
+}
+
+#searchN button:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1.5rem 3rem;
+    border: 1.4px solid #0065ED;
+    
+}
+
 
 .under-development{
     width: 100%;

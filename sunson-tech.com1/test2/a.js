@@ -85,9 +85,12 @@ document.addEventListener("click", e => {
         </div>`
 
         document.getElementById("scroll-option").classList.add("down");
+        document.getElementById("nav-scorelled-sub-section").style.display= 'flex';
 
         // sub options of the main options 
         if (e.target.matches("#solutions")) {
+            document.getElementById("scroll-option").style.gridTemplateColumns= '3fr 8fr ';
+
             document.getElementById("nav-scorelled-section").innerHTML = `
             <button id ="Bank">Bank & Identity</button>
             <button id ="Retail">Retail & Healthcare</button>
@@ -107,6 +110,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#industries")) {
+            document.getElementById("scroll-option").style.gridTemplateColumns= '3fr 8fr ';
+
             document.getElementById("nav-scorelled-section").innerHTML = `
             <button>Bank</button>
             <button>Healthcare</button>
@@ -115,6 +120,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#products")) {
+            document.getElementById("scroll-option").style.gridTemplateColumns= '3fr 8fr ';
+
             document.getElementById("nav-scorelled-section").innerHTML = `
             <button>ATM/CDM/CRS</button>
             <button>Healthcare Products</button>
@@ -123,6 +130,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#company")) {
+            document.getElementById("scroll-option").style.gridTemplateColumns= '3fr 8fr ';
+
             document.getElementById("nav-scorelled-section").innerHTML = `
             <button>About us</button>
             <button>Leadership</button>
@@ -132,6 +141,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#languages")) {
+            document.getElementById("scroll-option").style.gridTemplateColumns= '3fr 8fr ';
+
             document.getElementById("nav-scorelled-section").innerHTML = ` 
             <button><span>简体中文</span> <img src="../images/Flag-of-Chinese.svg" alt=""></button>
 
@@ -142,11 +153,15 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#search")) {
+            document.getElementById("scroll-option").style.gridTemplateColumns= '1fr';
+            document.getElementById("nav-scorelled-sub-section").style.display= 'none';
+
 
             document.getElementById("nav-scorelled-section").innerHTML = ` 
-             <input type="text">
-            <button style="background-color: #cdcdf6; padding:10px; border-radius: 7px;"> Search</button>
-           
+            <div id='searchN'>
+                <input type="text" placeholder="search" style="width: 100%; ">
+                <button > Search</button>
+           </div>
         `;
         }
 
