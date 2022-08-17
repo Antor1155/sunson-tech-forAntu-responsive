@@ -127,21 +127,21 @@ document.addEventListener("click", e => {
         `;
 
             document.getElementById('nav-scorelled-sub-section').innerHTML = `
-                <div>
+                <div id="indSubMenus">
 
-                <div class="company-section">
-                <img src="../images/underConstruction.webp" alt="">
-                <button>ATM</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum placeat enim temporibus, nobis necessitatibus. Molestiae ullam animi eaque sit?</p>
-                <a href="notfound.html"> Learn more > </a>
-                </div>
+                    <div class="company-section">
+                    <img src="../images/underConstruction.webp" alt="">
+                    <button>ATM</button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum placeat enim temporibus, nobis necessitatibus. Molestiae ullam animi eaque sit?</p>
+                    <a href="notfound.html"> Learn more > </a>
+                    </div>
 
-                <div class="company-section">
-                <img src="../images/underConstruction.webp" alt="">
-                <button>CDM</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum placeat enim temporibus, nobis necessitatibus. Molestiae ullam animi eaque sit?</p>
-                <a href="notfound.html"> Learn more > </a>
-                </div>
+                    <div class="company-section">
+                    <img src="../images/underConstruction.webp" alt="">
+                    <button>CDM</button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum placeat enim temporibus, nobis necessitatibus. Molestiae ullam animi eaque sit?</p>
+                    <a href="notfound.html"> Learn more > </a>
+                    </div>
 
                 </div>
                 `
@@ -311,7 +311,7 @@ document.addEventListener("click", e => {
 document.addEventListener("click", e=>{
     if (e.target.matches('#indBank')) {
         document.getElementById('nav-scorelled-sub-section').innerHTML = `
-        <div>
+        <div id="indSubMenus">
 
         <div class="company-section">
         <img src="../images/underConstruction.webp" alt="">
@@ -333,7 +333,7 @@ document.addEventListener("click", e=>{
 
     if (e.target.matches('#indHealth')) {
         document.getElementById('nav-scorelled-sub-section').innerHTML = `
-        <div>
+        <div id="indSubMenus">
 
         <div class="company-section">
         <img src="../images/underConstruction.webp" alt="">
@@ -354,7 +354,7 @@ document.addEventListener("click", e=>{
     }
     if (e.target.matches('#indSecurity')) {
         document.getElementById('nav-scorelled-sub-section').innerHTML = `
-        <div>
+        <div id="indSubMenus">
 
         <div class="company-section">
         <img src="../images/underConstruction.webp" alt="">
@@ -382,7 +382,7 @@ document.addEventListener("click", e=>{
     }
     if (e.target.matches('#indRetails')) {
         document.getElementById('nav-scorelled-sub-section').innerHTML = `
-        <div>
+        <div id="indSubMenus">
 
         <div class="company-section">
         <img src="../images/underConstruction.webp" alt="">
