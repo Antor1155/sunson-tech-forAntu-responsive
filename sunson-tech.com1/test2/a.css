@@ -239,6 +239,11 @@ hr:nth-child(3) {
     color: black;
 }
 
+.big-nav-option:hover{
+    color: #0065ED;
+    font-weight: 800;
+}
+
 .normal-nav button, img{
     cursor: pointer;
 }
