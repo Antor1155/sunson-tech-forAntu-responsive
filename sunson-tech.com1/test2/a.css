@@ -227,7 +227,7 @@ hr:nth-child(3) {
     width: 25px;
 }
 
-.normal-nav img:first-child{
+.normal-nav>img:first-child{
     width: 144px;
     
 }
@@ -338,6 +338,17 @@ hr:nth-child(3) {
     pointer-events: auto;
 }
 
+.company-section{
+    flex-direction: column;
+}
+
+.company-section img{
+    width: 100%;
+}
+
+.company-section a{
+  color: rgb(17, 135, 238);
+}
 
 /* all external css comes from this line */
 /* for all the divs and elements to have similar padding and width  */
