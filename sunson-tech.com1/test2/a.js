@@ -227,7 +227,6 @@ document.addEventListener("click", e => {
         document.getElementById("scroll-option").classList.remove("down");
 
         document.getElementById("search").src = "../images/searchIcon.svg";
-        
     }
 
 })
