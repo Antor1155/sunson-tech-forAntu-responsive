@@ -74,8 +74,11 @@ document.addEventListener("click", e => {
 })
 
 
+
+
 // big screen options and suboptions 
 document.addEventListener("click", e => {
+
     if (e.target.matches(".big-nav-option")) {
         e.stopPropagation();
 
@@ -89,6 +92,8 @@ document.addEventListener("click", e => {
 
         // sub options of the main options 
         if (e.target.matches("#solutions")) {
+            document.getElementById("search").src = "../images/searchIcon.svg";
+
             document.getElementById("scroll-option").style.gridTemplateColumns = '3fr 8fr ';
 
             document.getElementById("nav-scorelled-section").innerHTML = `
@@ -110,6 +115,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#industries")) {
+            document.getElementById("search").src = "../images/searchIcon.svg";
+
             document.getElementById("scroll-option").style.gridTemplateColumns = '3fr 8fr ';
 
             document.getElementById("nav-scorelled-section").innerHTML = `
@@ -120,6 +127,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#products")) {
+            document.getElementById("search").src = "../images/searchIcon.svg";
+
             document.getElementById("scroll-option").style.gridTemplateColumns = '3fr 8fr ';
 
             document.getElementById("nav-scorelled-section").innerHTML = `
@@ -130,6 +139,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#company")) {
+            document.getElementById("search").src = "../images/searchIcon.svg";
+
             document.getElementById("scroll-option").style.gridTemplateColumns = '1fr';
             document.getElementById("nav-scorelled-sub-section").style.display = 'none';
 
@@ -170,6 +181,8 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#languages")) {
+            document.getElementById("search").src = "../images/searchIcon.svg";
+
             document.getElementById("scroll-option").style.gridTemplateColumns = '3fr 8fr ';
 
             document.getElementById("nav-scorelled-section").innerHTML = ` 
@@ -182,16 +195,29 @@ document.addEventListener("click", e => {
         }
 
         else if (e.target.matches("#search")) {
-            document.getElementById("scroll-option").style.gridTemplateColumns = '1fr';
-            document.getElementById("nav-scorelled-sub-section").style.display = 'none';
+            srcName = document.getElementById("search").src;
 
+            // this section is for the cross mark when the search menu comes forward 
+            if (srcName.includes('/images/cross-svgrepo-com.svg')) {
+                document.getElementById("search").src = "../images/searchIcon.svg";
+        
+                document.getElementById("scroll-option").classList.remove("down");
+            }
 
-            document.getElementById("nav-scorelled-section").innerHTML = ` 
-            <div id='searchN'>
+            else{
+
+                document.getElementById("scroll-option").style.gridTemplateColumns = '1fr';
+                document.getElementById("nav-scorelled-sub-section").style.display = 'none';
+                
+                document.getElementById("search").src = "../images/cross-svgrepo-com.svg";
+                
+                document.getElementById("nav-scorelled-section").innerHTML = ` 
+                <div id='searchN'>
                 <input type="text" placeholder="search" style="width: 100%; ">
                 <button > Search</button>
-           </div>
-        `;
+                </div>
+                `;
+            }
         }
 
     }
@@ -199,9 +225,15 @@ document.addEventListener("click", e => {
     if (e.target.matches('nav')) {
         // console.log("from nav")
         document.getElementById("scroll-option").classList.remove("down");
+
+        document.getElementById("search").src = "../images/searchIcon.svg";
+        
     }
 
 })
+
+
+
 
 
 document.addEventListener("click", e => {
@@ -269,5 +301,7 @@ document.addEventListener("click", e => {
 document.addEventListener("click", e => {
     if (e.target.matches('.video-banner, .common-Width, h1, p')) {
         document.getElementById("scroll-option").classList.remove("down");
+
+        document.getElementById("search").src = "../images/searchIcon.svg";
     }
 })
