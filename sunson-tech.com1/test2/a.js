@@ -1,13 +1,29 @@
 // js for nav icon 
 
+let onOff = false;
+
 document.addEventListener('click', e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
     if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
 
+    
     let currentDropdown
     if (isDropdownButton) {
         currentDropdown = e.target.closest("[data-dropdown]")
         currentDropdown.classList.toggle("on")
+        onOff = !onOff;
+    }
+    
+    if(onOff){
+        document.getElementById('hamburgerMenu').innerHTML=`
+        <img  src="../images/cross-svgrepo-com.svg" alt=""> `
+        console.log(onOff)
+    }
+    else{
+        document.getElementById('hamburgerMenu').innerHTML=`<hr>
+        <hr>
+        <hr> `
+        console.log(onOff, "from else section");
     }
 
 })

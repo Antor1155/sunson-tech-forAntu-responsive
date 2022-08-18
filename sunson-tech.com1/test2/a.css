@@ -81,6 +81,11 @@ h2, h3, h4{
     border: none;
 }
 
+#hamburgerMenu img{
+    width: 25px;
+    pointer-events: none;
+}
+
 hr {
     height: 3px;
     width: 100%;
@@ -145,17 +150,24 @@ hr:nth-child(3) {
     position: relative;
 }
 
-.hidden {
-    display: none;
-}
 
 .sub-menu:hover .underline {
     text-decoration: underline;
 }
 
+.hidden {
+    display: block;
+}
 
 .allOption.active .hidden {
-    display: block;
+    display: none;
+}
+
+.allOption.active .sub-menu{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    justify-content: center;
 }
 
 .options {
