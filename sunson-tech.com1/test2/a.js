@@ -94,6 +94,12 @@ let activeSection = undefined;
 
 // big screen options and suboptions 
 document.addEventListener("click", e => {
+    // removing already opended section 
+    if(activeSection && e.target.matches(activeSection)){
+        activeSection = undefined;
+        document.getElementById("scroll-option").classList.remove("down");
+        return
+    }
 
     if (e.target.matches(".big-nav-option")) {
         e.stopPropagation();
@@ -109,7 +115,7 @@ document.addEventListener("click", e => {
         // sub options of the main options 
         if (e.target.matches("#solutions")) {
 
-            activeSection = "#industries";
+            activeSection = "#solutions";
 
             document.getElementById("search").src = "../images/searchIcon.svg";
 
