@@ -268,6 +268,7 @@ document.addEventListener("click", e => {
 
     if (e.target.matches('nav')) {
         // console.log("from nav")
+        activeSection = undefined;
         document.getElementById("scroll-option").classList.remove("down");
 
         document.getElementById("search").src = "../images/searchIcon.svg";
@@ -452,7 +453,7 @@ document.addEventListener("click", e => {
     }
     if (e.target.matches('.video-banner, .common-Width, h1, p, body')) {
 
-        activeSection = "";
+        activeSection = undefined;
         
         document.getElementById("scroll-option").classList.remove("down");
 
