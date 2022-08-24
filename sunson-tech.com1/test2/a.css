@@ -107,7 +107,6 @@ h2, h3, h4{
     width: 92%;
     height: 2.5em;
     margin: auto;
-    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     display: none;
