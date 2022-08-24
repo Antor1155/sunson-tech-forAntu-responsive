@@ -118,14 +118,11 @@ hr:nth-child(3) {
    top:100%;
    z-index: 5;
    pointer-events: none;
-   opacity: 0;
-   transition: height 700ms, opacity 550ms;
+   transition: height 700ms;
    
 }
 
-
 .cic-dropdown.on .sub-menus {
-    opacity: 1;
     height: 15em;
     pointer-events: auto;
 }
@@ -133,8 +130,13 @@ hr:nth-child(3) {
 .sub-menus button, .sub-menus a{
     padding-left: 10px;
     padding-right: 10px;
+    opacity: 0;
+    transition: opacity 500ms;
 }
 
+.cic-dropdown.on  .sub-menus button,.cic-dropdown.on .sub-menus a{
+    opacity: 1;
+}
 
 /* ******---------------------- */
 /* sub menu starts form here  */
