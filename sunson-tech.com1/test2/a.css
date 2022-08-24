@@ -4,6 +4,7 @@ body{
 
 header{
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.654);
+    position:relative;
 }
 /* common decorations */
 
@@ -55,7 +56,6 @@ h2, h3, h4{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     z-index: 10;
    
     padding:1rem .5rem .4rem .8rem;
@@ -110,42 +110,44 @@ hr:nth-child(3) {
 }
 
 .sub-menus {
-    position: absolute;
-    top: 40%;
-    /* background-color: yellow; */
-    width: 95%;
-    margin: auto;
-    opacity: 0;
-    pointer-events: none;
-    transition: top 450ms , opacity 350ms ;
-    border-bottom: 1px solid red;
+   position: absolute;
+   background-color:  white;
+   left: 0;
+   width: 100vw;
+   height: 0;
+   top:100%;
+   z-index: 5;
+   pointer-events: none;
+   opacity: 0;
+   transition: height 700ms, opacity 550ms;
+   
 }
+
 
 .cic-dropdown.on .sub-menus {
     opacity: 1;
-    top: 100%;
+    height: 15em;
     pointer-events: auto;
-    background-color:  white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    right: -2%;
-
-
 }
+
+.sub-menus button, .sub-menus a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 /* ******---------------------- */
 /* sub menu starts form here  */
 .sub-menu {
     width: 100%;
     text-align: start;
-    background-color: white;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     /* margin-bottom: 1.5rem; */
     padding-left: 0;
     display: flex;
     justify-content: space-between;
-
 
     position: relative;
 }

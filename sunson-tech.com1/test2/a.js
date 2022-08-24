@@ -1,4 +1,4 @@
-// js for nav icon 
+// js for nav icon in mobile view
 
 let onOff = false;
 
@@ -21,7 +21,6 @@ document.addEventListener('click', e => {
     }
     else{
         document.getElementById('hamburgerMenu').innerHTML=`<hr>
-        <hr>
         <hr> `
         console.log(onOff, "from else section");
     }
