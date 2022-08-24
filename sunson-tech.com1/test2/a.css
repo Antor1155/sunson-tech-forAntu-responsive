@@ -253,7 +253,14 @@ hr:nth-child(3) {
 
 .big-nav-option:hover{
     color: #0065ED;
-    font-weight: 800;
+    text-decoration: none;
+}
+
+.downSign{
+    font-size:.7rem;
+    padding-left: 3px;
+    transform: translateY(5%);
+    display: inline-block;
 }
 
 .normal-nav button, img{
