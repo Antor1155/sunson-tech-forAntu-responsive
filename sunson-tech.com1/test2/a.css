@@ -35,7 +35,7 @@ h2, h3, h4{
 .common-Width{
     width: 85%;
     margin: auto;
-    max-width: 1700px;
+    max-width: 1500px;
 }
 
 /* ************************************* */
@@ -94,7 +94,7 @@ h2, h3, h4{
     background-color: white;
     z-index: 2;
 
-    transition:padding 700ms;
+    transition:padding 450ms;
 
 }
 
@@ -264,13 +264,14 @@ hr:nth-child(3) {
 
 
 /* big monitor navbar starts form here  */
+/* big monitor navbar starts form here  */
+/* big monitor navbar starts form here  */
+
 .normal-nav{
     display: flex;
     justify-content: space-between;
     padding: .6rem 4rem;
     margin-bottom: .5rem;
-
-    max-width: 1700px;
     margin: auto;
     position: relative;
     
@@ -693,12 +694,6 @@ footer a:hover{
 }
 
 @media screen and (min-width:1000px){
-    /* .video-banner{
-        overflow: hidden;
-    }
-    video{
-        height: 28rem;
-    } */
 
     .cic-dropdown{
         display: none;
