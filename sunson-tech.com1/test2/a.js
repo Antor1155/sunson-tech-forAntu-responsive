@@ -1,3 +1,15 @@
+// js for mobile view search icon 
+document.addEventListener("click", e=>{
+    if(e.target.matches("#mobile-searchicon")){
+        document.querySelector('[data-dropdown]').classList.remove('on');
+        document.getElementById('hamburgerMenu').innerHTML=`<hr>
+        <hr> `
+
+        document.getElementById('mobile-searchSub').classList.toggle('active');
+    }
+})
+
+
 // js for nav icon in mobile view
 
 let onOff = false;
@@ -17,12 +29,15 @@ document.addEventListener('click', e => {
     if(onOff){
         document.getElementById('hamburgerMenu').innerHTML=`
         <img  src="../images/cross-svgrepo-com.svg" alt=""> `
-        console.log(onOff)
+        
+        document.getElementById('mobile-searchSub').classList.remove('active');
+
     }
     else{
         document.getElementById('hamburgerMenu').innerHTML=`<hr>
         <hr> `
-        console.log(onOff, "from else section");
+        
+        document.getElementById('mobile-searchSub').classList.remove('active');
     }
 
 })
@@ -459,3 +474,5 @@ document.addEventListener("click", e => {
         document.getElementById("search").src = "../images/searchIcon.svg";
     }
 })
+
+
