@@ -99,15 +99,39 @@ h2, h3, h4{
 }
 
 #mobile-searchSub.active{
-    padding: 1.5rem .5rem 3rem .5rem;
+    padding: 1.5rem .1rem 3rem .1rem;
 }
 
-.to-hide{
+.nokia-search{
+    border: 1px solid rgb(0, 0, 0);
+    width: 92%;
+    height: 2.5em;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
     display: none;
 }
 
-#mobile-searchSub.active .to-hide{
-    display: inline;
+input.to-hide{
+    width: 85%;
+    border: none;
+    padding-left: 10px;
+}
+
+button.to-hide{
+    width: 15%;
+    border: none;
+    background-color: transparent;
+}
+button.to-hide img{
+    width: 65%;
+    border: none;
+}
+
+
+#mobile-searchSub.active .nokia-search{
+    display: flex;
 }
 
 .hamburger-menu {

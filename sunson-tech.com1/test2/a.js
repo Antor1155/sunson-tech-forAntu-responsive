@@ -7,6 +7,7 @@ document.addEventListener("click", e=>{
 
         document.getElementById('mobile-searchSub').classList.toggle('active');
     }
+
 })
 
 
