@@ -255,6 +255,9 @@ hr:nth-child(3) {
 
 
 /* here comes the solution section part  */
+.solution-section{
+    background-color: white;
+}
 .solution-section>div {
     display: flex;
     flex-direction: column;
@@ -263,7 +266,6 @@ hr:nth-child(3) {
 
 .solution-section button{
     border: none;
-    border-bottom: 1px solid rgb(226, 113, 113);
     margin-bottom: 1rem;
     background-color: white;
    

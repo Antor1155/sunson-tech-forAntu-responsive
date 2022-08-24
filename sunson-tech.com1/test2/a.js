@@ -3,7 +3,8 @@ document.addEventListener("click", e=>{
     if(e.target.matches("#mobile-searchicon")){
         document.querySelector('[data-dropdown]').classList.remove('on');
         document.getElementById('hamburgerMenu').innerHTML=`<hr>
-        <hr> `
+        <hr> `;
+        onOff = !onOff;
 
         document.getElementById('mobile-searchSub').classList.toggle('active');
     }
